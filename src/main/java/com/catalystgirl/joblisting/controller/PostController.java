@@ -49,7 +49,7 @@ public class PostController {
     @GetMapping("/post/{text}")
     public List<Post> search(@PathVariable String text){
      
-      return searchrepo.findByText("Text");
+      return searchrepo.findByText(text);
 
     }
 
